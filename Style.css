@@ -1,0 +1,293 @@
+/* إعداد عام */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #222;
+}
+
+/* ----------------- الناف بار ----------------- */
+.navbar {
+  background: linear-gradient(90deg, #000, #003366);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  direction: rtl;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 14px 50px;
+  width: 100%;
+}
+
+.nameweb {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00aaff;
+  letter-spacing: 1px;
+}
+
+/* الروابط */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffcc00;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+.namepage {
+  width: 90%;
+  text-align: center;
+  margin: 120px auto 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #000, #003366);
+  color: #fff;
+  padding: 25px 0;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ----------------- المحتوى ----------------- */
+main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 35px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  text-align: right;
+  direction: rtl;
+}
+h2 {
+  color: #0077cc;
+  font-size: 24px;
+  border-right: 5px solid #0077cc;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ----------------- الجداول ----------------- */
+table {
+  text-align: center;
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-size: 19px;
+  direction: rtl;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+th {
+  background-color: #0077cc;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ----------------- الفوتر ----------------- */
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg, #000, #003366);
+  color: #fff;
+  text-align: right;
+  padding: 40px 60px 20px;
+  direction: rtl;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 60px;
+}
+
+.fcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.fsection {
+  flex: 1 1 280px;
+}
+
+.fsection h3 {
+  color: #00aaff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.flinks {
+  list-style: none;
+  padding: 0;
+}
+
+.flinks li {
+  margin-bottom: 8px;
+}
+
+.flinks a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.flinks a:hover {
+  color: #ffcc00;
+}
+
+a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #0077cc;
+  border-radius: 6px;
+  background-color: #eef7ff;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+.fbottom {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.orderSection{
+  display: none;
+  margin-top: 20px;
+}
+
+.btn{ 
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 35%;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+.about-text {
+  flex: 1 1 60%;
+}
+
+.car-details-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: right;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.car-details-image {
+  flex: 1 1 220px;
+}
+
+.car-details-image img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.car-details-text {
+  flex: 2 1 380px;
+}
